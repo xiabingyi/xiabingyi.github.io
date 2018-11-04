@@ -88,7 +88,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/2018/11/01/second/2.JPG">
 <meta property="og:image" content="http://yoursite.com/2018/11/01/second/1.JPG">
-<meta property="og:updated_time" content="2018-11-04T00:56:18.873Z">
+<meta property="og:updated_time" content="2018-11-04T05:04:35.892Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
 <meta name="twitter:description" content="html标签及属性学习笔记html基础知识点 大多数 HTML 元素可以嵌套 没有内容的 HTML 元素被称为空元素,在开始标签中添加/,是关闭空元素的正确方法 HTML标签可以拥有属性，属性以名称/值对的形式出现，属性总是在HTML元素的开始标签中规定 属性值应始终被包括在引号内，若属性值本身有双引号，则在双引号外使用单引号  基本格式&amp;lt;!DOCTYPE HTML&amp;gt; &amp;lt;html">
@@ -359,7 +359,9 @@
 </code></pre><h3 id="文字方向"><a href="#文字方向" class="headerlink" title="文字方向"></a>文字方向</h3><pre><code>&lt;bdo dir=&quot;rtl&quot;&gt;从右向左输出&lt;/bdo&gt;
 </code></pre><h3 id="书签"><a href="#书签" class="headerlink" title="书签"></a>书签</h3><p>1.在文档中对锚进行命名（创建一个书签）：</p>
 <pre><code>&lt;a name=&quot;命名&quot;&gt;书签所在处的文字&lt;/a&gt;
-</code></pre><p>2.在同一文档中创建指向该锚的链接：<br>​<br>    <a href="#命名">代替的文字</a><br>3.在其他页面中创建指向该锚的链接：</p>
+</code></pre><p>2.在同一文档中创建指向该锚的链接：</p>
+<pre><code>&lt;a href=&quot;#命名&quot;&gt;代替的文字&lt;/a&gt;
+</code></pre><p>3.在其他页面中创建指向该锚的链接：</p>
 <pre><code>&lt;a href=&quot;书签所在网址#命名&quot;&gt;替代的文字&lt;/a&gt;
 </code></pre><p><em>href创建指向另一个文档的链接</em><br><em>name创建文档内书签</em></p>
 <h3 id="替换文本属性"><a href="#替换文本属性" class="headerlink" title="替换文本属性"></a>替换文本属性</h3><pre><code>&lt;img src=&quot;图片名&quot; alt=&quot;可替代的文字&quot;&gt;
@@ -377,7 +379,41 @@
 </code></pre><p><em>target属性定义被链接的文档在何处显示</em></p>
 <h3 id="跳出框架"><a href="#跳出框架" class="headerlink" title="跳出框架"></a>跳出框架</h3><pre><code>&lt;a href=&quot;/index.html&quot; target=&quot;_top&quot;&gt;代替的文字&lt;/a&gt;
 </code></pre><h3 id="计算输出标签列表"><a href="#计算输出标签列表" class="headerlink" title="计算输出标签列表"></a>计算输出标签列表</h3><p><img src="/2018/11/01/second/1.JPG" alt=""></p>
-
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><pre><code>&lt;ul type=&quot;dics/circle/square&quot;&gt;
+&lt;li&gt;内容&lt;/li&gt;
+&lt;li&gt;内容&lt;/li&gt;
+……
+&lt;/ul&gt;
+</code></pre><p><em>type中表示无序列表不同的项目符号</em></p>
+<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><pre><code>&lt;ol type=&quot;a/A/i/I&quot;&gt;
+&lt;li&gt;内容&lt;/li&gt;
+&lt;li&gt;内容&lt;/li&gt;
+……
+&lt;/ol&gt; 
+</code></pre><p><em>type中分别表示有序列表不同的项目符号，其中a表示小写字母列表，A表示大写字母列表，i表示小写罗马字母列表，I表示大写罗马字母列表</em></p>
+<h3 id="HTML类"><a href="#HTML类" class="headerlink" title="HTML类"></a>HTML类</h3><p><em>&lt;div&gt;是<strong>块级元素</strong>,能够作为HTML其他元素的容器。</em></p>
+<p>在&lt;body&gt;标签前插入一段类定义</p>
+<pre><code>&lt;head&gt;
+&lt;style&gt;
+.cities {
+    background-color:背景颜色;
+    color:字体颜色;
+    margin:20px;（类边框到网页边框的距离）
+    padding:20px;（字体到类边框的距离）
+} 
+&lt;/style&gt;
+&lt;/head&gt;
+</code></pre><p>在&lt;body&gt;中插入：</p>
+<pre><code>&lt;div class=&quot;cities&quot;&gt;
+</code></pre><h3 id="行内元素"><a href="#行内元素" class="headerlink" title="行内元素"></a>行内元素</h3><p><em>&lt;span&gt; 元素是行内元素，能够用作文本的容器</em><br>在&lt;body&gt;标签前插入一段定义</p>
+<pre><code>&lt;head&gt;
+&lt;style&gt;
+  span.red {color:red;}
+&lt;/style&gt;
+&lt;/head&gt;
+</code></pre><p>在行中使用span：</p>
+<pre><code>&lt;span class=&quot;red&quot;&gt;用span表示的内容&lt;/span&gt;
+</code></pre>
       
     </div>
     
@@ -523,7 +559,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#html标签及属性学习笔记"><span class="nav-number">1.</span> <span class="nav-text">html标签及属性学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#html基础知识点"><span class="nav-number">1.1.</span> <span class="nav-text">html基础知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本格式"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标题"><span class="nav-number">1.1.2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#段落"><span class="nav-number">1.1.3.</span> <span class="nav-text">段落</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接"><span class="nav-number">1.1.4.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片"><span class="nav-number">1.1.5.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格"><span class="nav-number">1.1.6.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本格式化"><span class="nav-number">1.1.7.</span> <span class="nav-text">文本格式化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预格式文本"><span class="nav-number">1.1.8.</span> <span class="nav-text">预格式文本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#换行"><span class="nav-number">1.1.9.</span> <span class="nav-text">换行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用"><span class="nav-number">1.1.10.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">1.1.11.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#水平线"><span class="nav-number">1.1.12.</span> <span class="nav-text">水平线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#背景颜色"><span class="nav-number">1.1.13.</span> <span class="nav-text">背景颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#背景图片"><span class="nav-number">1.1.14.</span> <span class="nav-text">背景图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体、颜色及大小"><span class="nav-number">1.1.15.</span> <span class="nav-text">字体、颜色及大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本对齐"><span class="nav-number">1.1.16.</span> <span class="nav-text">文本对齐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缩写"><span class="nav-number">1.1.17.</span> <span class="nav-text">缩写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字方向"><span class="nav-number">1.1.18.</span> <span class="nav-text">文字方向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#书签"><span class="nav-number">1.1.19.</span> <span class="nav-text">书签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换文本属性"><span class="nav-number">1.1.20.</span> <span class="nav-text">替换文本属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片对齐方式"><span class="nav-number">1.1.21.</span> <span class="nav-text">图片对齐方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动图像"><span class="nav-number">1.1.22.</span> <span class="nav-text">浮动图像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#著作标题"><span class="nav-number">1.1.23.</span> <span class="nav-text">著作标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文档在何处显示"><span class="nav-number">1.1.24.</span> <span class="nav-text">文档在何处显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跳出框架"><span class="nav-number">1.1.25.</span> <span class="nav-text">跳出框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算输出标签列表"><span class="nav-number">1.1.26.</span> <span class="nav-text">计算输出标签列表</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#html标签及属性学习笔记"><span class="nav-number">1.</span> <span class="nav-text">html标签及属性学习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#html基础知识点"><span class="nav-number">1.1.</span> <span class="nav-text">html基础知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基本格式"><span class="nav-number">1.1.1.</span> <span class="nav-text">基本格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标题"><span class="nav-number">1.1.2.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#段落"><span class="nav-number">1.1.3.</span> <span class="nav-text">段落</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接"><span class="nav-number">1.1.4.</span> <span class="nav-text">链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片"><span class="nav-number">1.1.5.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格"><span class="nav-number">1.1.6.</span> <span class="nav-text">表格</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本格式化"><span class="nav-number">1.1.7.</span> <span class="nav-text">文本格式化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预格式文本"><span class="nav-number">1.1.8.</span> <span class="nav-text">预格式文本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#换行"><span class="nav-number">1.1.9.</span> <span class="nav-text">换行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引用"><span class="nav-number">1.1.10.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">1.1.11.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#水平线"><span class="nav-number">1.1.12.</span> <span class="nav-text">水平线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#背景颜色"><span class="nav-number">1.1.13.</span> <span class="nav-text">背景颜色</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#背景图片"><span class="nav-number">1.1.14.</span> <span class="nav-text">背景图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字体、颜色及大小"><span class="nav-number">1.1.15.</span> <span class="nav-text">字体、颜色及大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文本对齐"><span class="nav-number">1.1.16.</span> <span class="nav-text">文本对齐</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#缩写"><span class="nav-number">1.1.17.</span> <span class="nav-text">缩写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文字方向"><span class="nav-number">1.1.18.</span> <span class="nav-text">文字方向</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#书签"><span class="nav-number">1.1.19.</span> <span class="nav-text">书签</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#替换文本属性"><span class="nav-number">1.1.20.</span> <span class="nav-text">替换文本属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图片对齐方式"><span class="nav-number">1.1.21.</span> <span class="nav-text">图片对齐方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#浮动图像"><span class="nav-number">1.1.22.</span> <span class="nav-text">浮动图像</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#著作标题"><span class="nav-number">1.1.23.</span> <span class="nav-text">著作标题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文档在何处显示"><span class="nav-number">1.1.24.</span> <span class="nav-text">文档在何处显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#跳出框架"><span class="nav-number">1.1.25.</span> <span class="nav-text">跳出框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算输出标签列表"><span class="nav-number">1.1.26.</span> <span class="nav-text">计算输出标签列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">1.1.27.</span> <span class="nav-text">列表</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#无序列表"><span class="nav-number">1.1.27.1.</span> <span class="nav-text">无序列表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有序列表"><span class="nav-number">1.1.27.2.</span> <span class="nav-text">有序列表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML类"><span class="nav-number">1.1.28.</span> <span class="nav-text">HTML类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#行内元素"><span class="nav-number">1.1.29.</span> <span class="nav-text">行内元素</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
