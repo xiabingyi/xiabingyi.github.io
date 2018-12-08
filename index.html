@@ -300,7 +300,31 @@
       
         
           
-            
+            <h1 id="css相关学习笔记（下）"><a href="#css相关学习笔记（下）" class="headerlink" title="css相关学习笔记（下）"></a>css相关学习笔记（下）</h1><h2 id="css框模型"><a href="#css框模型" class="headerlink" title="css框模型"></a>css框模型</h2><h3 id="css框模型概述"><a href="#css框模型概述" class="headerlink" title="css框模型概述"></a>css框模型概述</h3><p><img src="/2018/12/06/4th/1.jpg" alt="css框模型"></p>
+<p>内边距、边框和外边距都是可选的，默认值是零<br>背景应用于由内容和内边距、边框组成的区域</p>
+<ul>
+<li>元素框的最内部分是实际的内容</li>
+<li>内边距直接包围内容，呈现元素的背景</li>
+<li>边框分隔内外边距</li>
+<li>外边距默认是透明的，因此不会遮挡其后的任何元素</li>
+</ul>
+<p>调整内外边距：</p>
+<pre><code>* {
+  margin: 数字;
+  padding: 数字;
+}
+</code></pre><p><strong>调整内边距、边框和外边距不会影响内容区域的尺寸，但是会影响元素框的总尺寸</strong><br><strong>外边距可以是负值，而且在很多情况下都要使用负值的外边距</strong><br><strong>为了回避测试器兼容性问题，不给元素添加具有指定宽度的内边距，而是尝试将内边距或外边距添加到元素的父元素和子元素</strong></p>
+<h3 id="css-padding属性"><a href="#css-padding属性" class="headerlink" title="css padding属性"></a>css padding属性</h3><p>可以按照上、右、下、左的顺序分别设置各边的内边距：</p>
+<pre><code>h1 {padding: 10px 0.25em 2ex 20%;}
+</code></pre><p>也可以通过使用下面四个单独的属性，分别设置上、右、下、左内边距</p>
+<ul>
+<li>padding-top</li>
+<li>padding-right</li>
+<li>padding-bottom</li>
+<li>padding-left</li>
+</ul>
+<p><strong>使用百分比时百分数值是相对于其父元素的 width 计算的</strong><br><strong>上下内边距与左右内边距一致；即上下内边距的百分数会相对于父元素宽度设置，而不是相对于高度</strong></p>
+
           
         
       
